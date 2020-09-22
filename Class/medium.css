@@ -2,5 +2,7 @@
     
 }
 @media (min-width:64em){
-    float:right
+    #photo{
+        float:right;
+    }
 }
