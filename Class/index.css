@@ -15,7 +15,6 @@ body{
     
 }
 #photo{
-  float:right;
   width:120px;
   height:160px;
   box-shadow: 0 0 17px black;
