@@ -6,6 +6,7 @@ h1{
     grid-column:1/2;
     border-radius:15px;
     font-size:32px;
+    font-family: 'PT Sans', sans-serif;
 }
 h2{
   border-bottom:1px solid lightgrey;
