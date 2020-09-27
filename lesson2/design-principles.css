@@ -1,7 +1,35 @@
 body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .5fr 1fr;
+    grid-gap:10px;
+    grid-row-gap:30px;
+    background-color: cadetblue;
+    padding:40px;
 }
 section{
-    border-style: solid black;
+    border: solid black;
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    grid-row:2;
+    background-color: lightgrey;
+}
+h1{
+    grid-column:2;
+    text-align:center;
+}
+a{
+    text-decoration:none;
+    border:.5px black solid;
+    color:black;
+    background-color:white;
+    border-radius:5px;
+    padding-left:10px;
+    padding-right:10px;
+    padding:5px;
+}
+section a:hover{
+    background-color:grey;
 }
