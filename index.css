@@ -1,5 +1,5 @@
 h1{
-    background-color: #643219;
+    background-color: #A2AAB0;
     color:white;
     text-align: center;
     padding:20px;
@@ -22,7 +22,7 @@ main{
 }
 footer{
   text-align:center;
-  background-color:#643219;
+  background-color:#A2AAB0;
   color:white;
   padding:1px;
   border-radius:15px;
@@ -51,4 +51,21 @@ footer .highlight{
 .highlight{
   color:yellow;
   font-size:10px;
+}
+body{
+  background-color: #CBC5C1;
+}
+ul li a{
+  border:1px solid black;
+  border-radius: 8px;
+  background-color: lightsteelblue;
+  text-decoration: none;
+  color:black;
+  padding:3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 30px;
+}
+ul li a:hover{
+  background-color: white;
 }
