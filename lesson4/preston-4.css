@@ -1,18 +1,21 @@
+body{
+	margin:0 auto;
+}
 nav {
 	margin: 0 auto;
 	max-width: 760px;
 	background-color: tomato;
 }
-#navigation {
+.navigation {
 	padding: 0;
 }
-#navigation li:first-child {
+.navigation li:first-child {
 	display: block;
 }
-#navigation li {
+.navigation li {
 	display: none;
 }
-#navigation a {
+.navigation a {
 	display: block;
 	padding: 0.75rem;
 	text-align: left;
@@ -20,25 +23,25 @@ nav {
 	color: black;
 	font-weight: 700;
 }
-#navigation a:hover {
+.navigation a:hover {
 	color: white;
 	background-color: black;
 }
-.responsive{
+.responsive li{
 	display: block;
 }
 @media only screen and (min-width: 32.5em) {
-	#navigation {
+	.navigation {
 		display: flex;
 	}
-	#navigation li {
+	.navigation li {
 		display: block;
 		flex: 1 1 auto;
 	}
-	#navigation a {
+	.navigation a {
 		text-align: center;
 	}
-	#navigation li:first-child {
+	.navigation li:first-child {
 		display: none;
 	}
 }
