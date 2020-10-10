@@ -1,5 +1,6 @@
-body{
+div{
 	margin:0 auto;
+	max-width:800px;
 }
 nav {
 	margin: 0 auto;
