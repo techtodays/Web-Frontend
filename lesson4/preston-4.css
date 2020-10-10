@@ -1,11 +1,22 @@
-div{
+body{
 	margin:0 auto;
-	max-width:800px;
+	margin:0 auto;
+	font-family: 'Roboto', sans-serif;
+	max-width: 520px;
+	padding:5px;
 }
 nav {
 	margin: 0 auto;
-	max-width: 760px;
-	background-color: tomato;
+	background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(242,255,254,1) 100%);
+}
+header{
+	background-image: url("Climate-change-1030x579.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+header img{
+	width:60px;
+	float:left;
 }
 .navigation {
 	padding: 0;
@@ -25,13 +36,18 @@ nav {
 	font-weight: 700;
 }
 .navigation a:hover {
-	color: white;
-	background-color: black;
+	background-image: linear-gradient(0deg, rgba(34,193,195,1) 70%, rgba(242,255,254,1) 100%);
 }
 .responsive li{
 	display: block;
 }
-@media only screen and (min-width: 32.5em) {
+header h1, header h3 {
+	margin:0;
+}
+h1{
+	font-size: 30px;
+}
+@media only screen and (min-width: 520px) {
 	.navigation {
 		display: flex;
 	}
@@ -44,5 +60,31 @@ nav {
 	}
 	.navigation li:first-child {
 		display: none;
+	}
+	body{
+		max-width: 770px;
+	}
+}
+@media only screen and (min-width: 800px){
+	body{
+		max-width: 2000px;
+	}
+	main, footer{
+		width: 800px;
+		margin:0 auto;
+		text-align:center;
+	}
+	h1{
+		font-size: 55px;
+		text-align: center;
+	}
+	header h3{
+		text-align: center;
+	}
+	header img{
+		width:100px;
+	}
+	header{
+		height:140px;
 	}
 }
