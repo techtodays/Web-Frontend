@@ -47,6 +47,22 @@ header h1, header h3 {
 h1{
 	font-size: 30px;
 }
+#new{
+	background-color:orange;
+	border:1px solid black;
+	text-align: center;
+	display: none;
+	margin:0;
+}
+#new strong{
+	font-size:30px;
+}
+#new b{
+	font-size: 35px;
+}
+#new p{
+	margin:0;
+}
 @media only screen and (min-width: 520px) {
 	.navigation {
 		display: flex;
