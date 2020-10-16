@@ -2,10 +2,13 @@ body{
 	margin:0 auto;
 	margin:0 auto;
 	font-family: 'Roboto', sans-serif;
-	max-width: 520px;
+	max-width: 720px;
     padding:5px;
-    background-color: lightblue;
-    backdrop-filter: blur(50px);
+    background-image: url(sunset.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(20px);
 }
 nav {
 	margin: 0 auto;
@@ -14,14 +17,16 @@ nav {
 header{
 	background-image: url("Climate-change-1030x579.jpg");
 	background-size: cover;
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    height:100px;
 }
 header img{
 	width:60px;
-	float:left;
+    float:left;
 }
 .navigation {
-	padding: 0;
+    padding: 0;
+    margin-top:-10px;
 }
 .navigation li:first-child {
 	display: block;
@@ -51,13 +56,13 @@ h1{
 }
 #new{
 	background-color:orange;
-	border:1px solid black;
-	text-align: center;
+    border:1px solid black;
+    text-align:center;
 	display: none;
 	margin:0;
 }
 #new strong{
-	font-size:30px;
+	font-size:20px;
 }
 #new b{
 	font-size: 35px;
@@ -67,30 +72,31 @@ h1{
 }
 #hero{
     width:100%;
-    height:460px;
+    height:260px;
     grid-column: 1/-1;
     grid-row: 1/-1;
+    border-radius:10px;
 }
 #container{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 153px 153px 153px;
-    height:460px;
+    grid-template-columns: 235px 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height:260px;
 }
 #summary{
-    grid-column: 1;
-    grid-row: 1/3;
-    backdrop-filter:blur(8px);
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    backdrop-filter:blur(20px);
     margin-left:40px;
     margin-right:40px;
     margin-top:30px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     border-radius:10px;
     text-align:left;
     line-height: 25px;
     padding:5px;
 }
-@media only screen and (min-width: 520px) {
+@media only screen and (min-width: 620px) {
 	.navigation {
 		display: flex;
 	}
@@ -105,19 +111,40 @@ h1{
 		display: none;
 	}
 	body{
-		max-width: 770px;
-	}
+		max-width: 1000px;
+    }
+    header{
+        height: 200px;
+    }
+    header h1{
+        font-size: 50px;
+        padding:10px;
+    }
+    header img{
+        width:140px;
+    }
+    header h3{
+        margin-left:60px;
+    }
+    #summary{
+        grid-row: 1;
+        grid-column: 1;
+        margin-right: 20px;
+    }
+    #hero, #container{
+        height:370px;
+    }
 }
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 1000px){
 	body{
 		max-width: 2000px;
 	}
 	main, footer{
-		width: 800px;
+		width: 1000px;
 		margin:0 auto;
-		text-align:center;
+		text-align:left;
 	}
-	h1{
+	main h1{
 		font-size: 55px;
 		text-align: center;
 	}
@@ -128,6 +155,13 @@ h1{
 		width:100px;
 	}
 	header{
-		height:140px;
-	}
+        height:140px;
+        text-align:center;
+    }
+    #hero, #container{
+        height:500px;
+    }
+    #summary{
+        grid-row: 1;
+    }
 }
