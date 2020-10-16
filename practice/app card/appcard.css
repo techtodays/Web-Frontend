@@ -3,7 +3,7 @@ div{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 50px 600px 230px 300px 160px;
     width:750px;
-    background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(242,255,254,0) 100%);
+    background-image: linear-gradient(0deg, rgba(0,65,255,1) 0%, rgba(65, 236, 199, 0.493) 38%, rgba(255,255,255,0) 100%);
     z-index: 200;
 }
 #main{
