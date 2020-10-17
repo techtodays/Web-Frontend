@@ -4,15 +4,14 @@
     background-size: contain;
     background-position: center;
     font-family: 'Roboto', sans-serif;
-    padding:20px;
+    padding:10px;
     height: 1000px;
     border-radius:8px;
 }
 body{
     max-width:800px;
     margin:0 auto;
-    padding-top:30px;
-    padding-bottom: 30px;
+    padding:10px;
 }
 li a{
     display:block;
@@ -52,11 +51,17 @@ header img{
 header h1{
     font-size: 50px;
     text-align:left;
+    margin:0;
 }
 @media screen and (max-width: 600px){
-    header ul{
+    .nav ul{
         display:grid;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
+        padding:0px;
+        width: 100%;
+    }
+    .nav ul li{
+        width:100%;
     }
 }
