@@ -9,6 +9,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 nav {
 	margin: 0 auto;
