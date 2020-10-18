@@ -2,7 +2,7 @@ body{
 	margin:0 auto;
 	margin:0 auto;
 	font-family: 'Roboto', sans-serif;
-	max-width: 720px;
+    max-width: 720px;
     padding:5px;
     background-image: url(sunset.jpg);
     background-attachment: fixed;
@@ -12,13 +12,16 @@ body{
 }
 nav {
 	margin: 0 auto;
-	background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(242,255,254,1) 100%);
+	background-image: linear-gradient(0deg, rgba(34,193,195,0.4) 0%, rgba(242,255,254,0.4) 100%);
+    margin-top: 10px;
+    border-radius: 0 0 10px 10px;
 }
 header{
 	background-image: url("Climate-change-1030x579.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
     height:100px;
+    border-radius: 10px 10px 0 0;
 }
 header img{
 	width:60px;
@@ -27,6 +30,7 @@ header img{
 .navigation {
     padding: 0;
     margin-top:-10px;
+    border-radius: 0 0 10px 10px;
 }
 .navigation li:first-child {
 	display: block;
@@ -43,7 +47,7 @@ header img{
 	font-weight: 700;
 }
 .navigation a:hover:not(.active) {
-	background-image: linear-gradient(0deg, rgba(34,193,195,1) 70%, rgba(242,255,254,1) 100%);
+	background-image: linear-gradient(0deg, rgba(34,193,195,0.4) 70%, rgba(242,255,254,0.4) 100%);
 }
 .responsive li{
 	display: block;
@@ -99,7 +103,7 @@ h1{
 .active{
     font-weight: bold;
     font-size: 20px;
-    background: linear-gradient(0deg, rgba(0,228,255,1) 0%, rgba(219,134,134,1) 96%);
+    background: linear-gradient(0deg, rgba(0,228,255,0.4) 0%, rgba(219,134,134,0.4) 96%);
 }
 #forcast-container{
     display:grid;
@@ -111,10 +115,31 @@ h1{
     margin-right: 30px;
     margin-bottom: 20px;
     border-radius:10px;
+    width:250px;
+    height:250px;
+    justify-self: center;
+    text-align: center;
+    line-height: 27px;
 }
-#forcast-container div img{
-    max-width:620px;
+#forcast-container div #strong{
+    font-size:100px;
+    margin: 0;
+    padding-top:10px;
+
+}
+#forcast-container div p{
+    padding-bottom: 10px;
+}
+#article img{
+    max-width: 600px;
     width:100%;
+    border-radius: 10px;
+}
+#article{
+    background-color: rgba(209, 209, 209, 0.2);
+    border-radius: 10px;
+    margin:10px;
+    padding:10px;
 }
 @media only screen and (min-width: 620px) {
 	.navigation {
@@ -153,6 +178,30 @@ h1{
     }
     #hero, #container{
         height:370px;
+    }
+    #forcast-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 80px 1fr 1fr;
+    }
+    #forcast-container h2{
+        grid-row: 1;
+        grid-column: 1/-1;
+        text-align: center;
+    }
+    #day4{
+        grid-column: 1/3;
+        grid-row: 3;
+    }
+    #day5{
+        grid-column: 2/4;
+        grid-row: 3;
+    }
+    #article img{
+        float: right;
+        width:350px;
+    }
+    #article{
+        height: 300px;
     }
 }
 @media only screen and (min-width: 1000px){
