@@ -17,4 +17,14 @@ window.addEventListener("load",(event)=>{
         cry.textContent = new Date().getFullYear();
       });
 
+    window.addEventListener('load', (event)=>{
+      const today = document.getElementById("today");
+      var month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+      var day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      var date = new Date();
+      var d = day[date.getDay()];
+      var m = month[date.getMonth()];
+      today.innerHTML = d + ', ' + date.getDate() + ' ' + m + ' ' + date.getFullYear()
+    });
+
     

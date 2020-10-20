@@ -167,6 +167,9 @@ iframe{
     border-radius: 10px;
     padding: 10px;
 }
+#contact b{
+    font-size: 25px;
+}
 ::-webkit-scrollbar {
     width: 8px;
     overflow: overlay;
