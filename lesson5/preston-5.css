@@ -1,6 +1,5 @@
 body{
 	margin:0 auto;
-	margin:0 auto;
 	font-family: 'Roboto', sans-serif;
     max-width: 720px;
     padding:5px;
@@ -10,6 +9,7 @@ body{
     background-position: center;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    overflow: overlay;
 }
 nav {
 	margin: 0 auto;
@@ -34,21 +34,25 @@ header img{
     border-radius: 0 0 10px 10px;
 }
 .navigation li:first-child {
-	display: block;
+    display: block;
+    border-radius: 0 0 10px 10px;
+}
+.navigation li:first-child:hover{
+    border-radius: 0 0 10px 10px;
 }
 .navigation li {
 	display: none;
 }
 .navigation a {
-	display: block;
-	padding: 0.75rem;
+    display: block;
+    padding: 10px;
 	text-align: left;
 	text-decoration: none;
 	color: black;
 	font-weight: 700;
 }
 .navigation a:hover:not(.active) {
-	background-image: linear-gradient(0deg, rgba(34,193,195,0.4) 70%, rgba(242,255,254,0.4) 100%);
+    background-image: linear-gradient(0deg, rgba(34,193,195,0.4) 100%, rgba(242,255,254,0.4) 100%);
 }
 .responsive li{
 	display: block;
@@ -103,9 +107,8 @@ h1{
     padding:5px;
 }
 .active{
-    font-weight: bold;
-    font-size: 20px;
-    background: linear-gradient(0deg, rgba(0,228,255,0.4) 0%, rgba(219,134,134,0.4) 96%);
+    background-color: rgba(255, 0, 0, .4);
+    border-radius: 0 0 0 10px;
 }
 #forcast-container{
     display:grid;
@@ -147,6 +150,39 @@ h1{
     margin:10px;
     padding:10px;
 }
+iframe{
+    border-radius: 10px;
+    height: 300px;
+    width: 100%;
+}
+#contact{
+    background: rgba(209, 209, 209, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+#legal{
+    text-align: center;
+    background-image: linear-gradient(0deg, rgba(34,193,195,0.4) 0%, rgba(242,255,254,0.4) 100%);
+    border-radius: 10px;
+    padding: 10px;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    overflow: overlay;
+    background: transparent;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(41, 40, 40, .6);; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(41, 40, 40, 1);; 
+  }
 @media only screen and (min-width: 620px) {
 	.navigation {
 		display: flex;
@@ -183,7 +219,7 @@ h1{
         margin-right: 20px;
     }
     #hero, #container{
-        height:370px;
+        height:270px;
     }
     #container{
         margin: 10px;
@@ -214,15 +250,18 @@ h1{
         float: right;
         width:350px;
     }
-    #article{
-        height: 300px;
+    iframe{
+        float: right;
+    }
+    .clear{
+        clear: both;
     }
 }
 @media only screen and (min-width: 1000px){
 	body{
 		max-width: 2000px;
 	}
-	main, footer{
+	main{
 		width: 1500px;
 		margin:0 auto;
 		text-align:left;
@@ -242,15 +281,15 @@ h1{
         text-align:center;
     }
     #hero, #container{
-        height:500px;
+        height:270px;
     }
     #summary{
-        grid-row: 1;
+        grid-row: 1/4;
     }
     #forcast-container{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 80px 1fr;
-        width: 100%;
+        max-width: 1500px;
     }
     #day4{
         grid-column: 4;
@@ -261,9 +300,13 @@ h1{
         grid-row: 2;
     }
     #forcast-container div{
-        margin: 0;
+        margin: 5px;
     }
     #forcast-container h2{
         padding-top:10px;
+    }
+    header, nav, footer{
+        margin-left: 50px;
+        margin-right: 50px;
     }
 }
