@@ -26,5 +26,4 @@ window.addEventListener("load",(event)=>{
       var m = month[date.getMonth()];
       today.innerHTML = d + ', ' + date.getDate() + ' ' + m + ' ' + date.getFullYear()
     });
-
     
