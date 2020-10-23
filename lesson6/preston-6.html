@@ -7,12 +7,13 @@
         <link rel="shortcut icon" href="favicon.ico">
         <title>Diverse Weather</title>
         <script src="preston-6.js"></script>
+        <script src="windchill.js"></script>
     </head>
     <body>
         <div id=new class=new1>
-            <p><marquee behavior="alternate" scrollamount="12">🥞</marquee></p>
+            <marquee behavior="alternate" scrollamount="12">🥞</marquee>
             <p>Preston <strong>Pancakes</strong> in the Park! <strong>9:00 a.m. Saturday</strong> at the city park pavillian.</p>
-            <p><marquee behavior="alternate" scrollamount="12">🥞</marquee></p>
+            <marquee behavior="alternate" scrollamount="12">🥞</marquee>
         </div>
         <header>
             <img src="road_trip-travel-car-weather-256.png">
@@ -42,11 +43,12 @@
                     <div id=summary>
                         <h3>Weather Summary</h3>
                         <p>
-                            <b>Temprature</b>: 87° <br>
+                            <b>Temprature</b>: <span id="temp">87</span>° <br>
                             <b>Enviroment</b>: Sunny <br>
                             <b>Humidity</b>: 10% <br>
                             <b>Chance of Rain</b>: 10% <br>
-                            <b>Wind Chill</b>: 20%
+                            <b>Wind Speed</b>: <span id="speed">12</span>mph <br>
+                            <b>Wind Chill</b>: <span id="wind"></span>
                         </p>
                     </div>
                 </div>
