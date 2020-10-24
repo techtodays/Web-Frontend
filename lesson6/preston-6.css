@@ -230,9 +230,10 @@ iframe{
         margin-right: 20px;
     }
     #container{
-        grid-template-rows: 50px 1fr;
+        grid-template-rows: 50px 1fr 200px;
         margin: 10px;
-        max-width: 100%;
+        max-height: 100%;
+        max-width: fit-content;
     }
     #forcast-container{
         grid-template-columns: 1fr 1fr 1fr;
@@ -303,7 +304,7 @@ iframe{
         text-align:center;
     }
     #container{
-       max-width: 100%;
+        max-width: 100%;
     }
     picture img{
         height: 100%;
