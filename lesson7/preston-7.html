@@ -1,0 +1,137 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="preston-7.css">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <title>Diverse Weather</title>
+        <script src="js/preston-7.js"></script>
+        <script src="js/windchill.js"></script>
+    </head>
+    <body>
+        <div id=new class=new1>
+            <marquee behavior="alternate" scrollamount="12">🥞</marquee>
+            <p>Preston <strong>Pancakes</strong> in the Park! <strong>9:00 a.m. Saturday</strong> at the city park pavillian.</p>
+            <marquee behavior="alternate" scrollamount="12">🥞</marquee>
+        </div>
+        <header>
+            <img src="images/Icon.jpeg">
+            <h1>Diverse Weather</h1>
+            <h3>Do or do not there is not try</h3>
+        </header>
+        <nav>
+            <ul class="navigation" >
+                <li><a class=ham href="#">🍔&#9776 Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a class="active" href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="weather-summary">
+                <div id="container">
+                    <h2>Preston Idaho</h2>
+                    <picture>
+                        <source media="(min-width: 1000px)" srcset="images/heroimage-desktop.jpeg">
+                        <source media="(min-width: 620px) and (max-width: 999px)" srcset="images/heroimage-tablet.jpeg">
+                        <img src="images/heroimage-mobile.jpeg" alt="hero image">
+                    </picture>
+                    <div id=summary>
+                        <h3>Weather Summary</h3>
+                        <p>
+                            <b>Temprature</b>: <span id="temp">87</span>° <br>
+                            <b>Enviroment</b>: Sunny <br>
+                            <b>Humidity</b>: 10% <br>
+                            <b>Chance of Rain</b>: 10% <br>
+                            <b>Wind Speed</b>: <span id="speed">12</span>mph <br>
+                            <b>Wind Chill</b>: <span id="wind"></span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="forcast-container">
+                <h2>Five Day Forecast</h2>
+                <div id="day1">
+                    <h3>Monday</h3>
+                    <p>
+                        <b>High:</b> 85° <br>
+                        <b>Low:</b> 52° <br>
+                        <b>Partly Cloudy</b> <br>
+                    </p>
+                    <p id="strong">&#127781;</p>
+                </div>
+                <div id="day2">
+                    <h3>Tuesday</h3>
+                    <p>
+                        <b>High:</b> 80° <br>
+                        <b>Low:</b> 50° <br>
+                        <b>Thunderstorm</b> <br>
+                    </p>
+                    <p id="strong">&#127785;</p>
+                </div>
+                <div id="day3">
+                    <h3>Wednesday</h3>
+                    <p>
+                        <b>High:</b> 70° <br>
+                        <b>Low:</b> 60° <br>
+                        <b>Windy</b> <br>
+                    </p>
+                    <p id="strong">&#127787;</p>
+                </div>
+                <div id="day4">
+                    <h3>Thursday</h3>
+                    <p>
+                        <b>High:</b> 10° <br>
+                        <b>Low:</b> -23° <br>
+                        <b>Snow Storm</b> <br>
+                    </p>
+                    <p id="strong">&#127784;</p>
+                </div>
+                <div id="day5">
+                    <h3>Friday</h3>
+                    <p>
+                        <b>High:</b> -25° <br>
+                        <b>Low:</b> -300° <br>
+                        <b>End of the World</b> <br>
+                    </p>
+                    <p id="strong">&#127786;</p>
+                </div>
+            </section>
+            <section id="article">
+                <img src="images/End of the world.jpg" alt="End of the World">
+                <h2>The End is Here</h2>
+                <p>this is just some random stuff in some stuff hahaha</p>
+                <p>this is just some random stuff in some stuff hahaha</p>
+                <p>this is just some random stuff in some stuff hahaha</p>
+                <br class="clear">
+            </section>
+            <section id="contact">
+                <h2>Contact Information</h2>
+                <p><b>&#9993</b> = Endoftheworld.now</p>
+                <p><b>📞</b> = 1(800)NOW-ENDS</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.9973704241324!2d-111.78544368417127!3d43.814413950008245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b03dc48a5cf%3A0x1e5534d3c38ef412!2sBrigham%20Young%20University-Idaho!5e0!3m2!1sen!2sus!4v1603144268754!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <br class="clear">
+            </section>
+        </main>
+        <footer id="legal">
+            <p class="legal">&copy; <span id="copyrightyear"></span> | Isaiah R. Halsey  | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+            <p class="highlight">Last Updated: <span id="lastupdated"></span></p>
+            <p id="today"></p>
+        </footer>
+        <br class="clear">
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script></body>
+        <script>
+            WebFont.load({
+                google: {
+                families: [
+                    'Roboto'
+                ]
+                }
+            });
+    </script>
+    </body>
+</html>
