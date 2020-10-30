@@ -13,7 +13,7 @@ body{
 }
 nav {
 	margin: 0 auto;
-	background-image: linear-gradient(0deg, rgba(34,193,195,0.4) 0%, rgba(242,255,254,0.4) 100%);
+	background: linear-gradient(0deg, rgba(34,193,195,0.4) 0%, rgba(242,255,254,0.4) 100%);
     margin-top: 10px;
     border-radius: 0 0 10px 10px;
 }
@@ -58,10 +58,10 @@ header img{
 	text-align: left;
 	text-decoration: none;
 	color: black;
-	font-weight: 700;
+    font-weight: 700;
 }
 .navigation a:hover:not(.active) {
-    background-image: linear-gradient(0deg, rgba(34,193,195,0.4) 100%, rgba(242,255,254,0.4) 100%);
+    background: linear-gradient(0deg, rgba(34,193,195,0.4) 100%, rgba(242,255,254,0.4) 100%);
 }
 .responsive li{
 	display: block;
