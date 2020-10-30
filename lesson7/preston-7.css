@@ -18,7 +18,7 @@ nav {
     border-radius: 0 0 10px 10px;
 }
 header{
-	background-image: url("Climate-change-1030x579.jpg");
+	background-image: url("images/Climate-change-1030x579.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
     height:100px;
@@ -38,6 +38,15 @@ header img{
     border-radius: 0 0 10px 10px;
 }
 .navigation li:first-child:hover{
+    border-radius: 0 0 10px 10px;
+}
+.fix:hover{
+    border-radius: 0 0 0 10px;
+}
+.fix2:hover{
+    border-radius: 0 0 10px 10px;
+}
+.fix3:hover{
     border-radius: 0 0 10px 10px;
 }
 .navigation li {
@@ -202,7 +211,10 @@ iframe{
 	}
 	.navigation li:first-child {
 		display: none;
-	}
+    }
+    .fix2:hover{
+        border-radius: 0 0 10px 0;
+    }
 	body{
 		max-width: 1000px;
     }
@@ -288,7 +300,10 @@ iframe{
 @media only screen and (min-width: 1000px){
 	body{
 		max-width: 2000px;
-	}
+    }
+    .fix2:hover{
+        border-radius: 0 0 10px 0;
+    }
 	main{
 		max-width: 1500px;
 		margin:0 auto;
