@@ -1,0 +1,45 @@
+body{
+    margin:0 auto;
+    background-image: url(/Website/Template/Images/sunset.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    overflow: overlay;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    grid-auto-flow: dense;
+}
+#background{
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: 100%;
+    z-index: -1;
+    height: 170px;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+#icon{
+    grid-row: 1;
+    grid-column: 1;
+    height: 150px;
+    padding: 10px;
+}
+h1{
+    grid-row: 1;
+    grid-column: 2;
+    font-size: 40px;
+}
+h3{
+    grid-row: 1;
+    grid-column: 2;
+    margin-top:77px;
+}
