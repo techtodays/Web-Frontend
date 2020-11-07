@@ -1,16 +1,17 @@
 form{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     grid-auto-flow: row dense;
     padding-left: 20px;
     padding: 30px;
     gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 button{
     width: fit-content;
     justify-self: center;
     grid-column: 1/-1;
-    margin-right: 100px;
     order: 3;
 }
 #level, #info{
@@ -41,3 +42,34 @@ button{
 #storm, #personal_info{
     padding-bottom: 30px;
 }
+label{
+    width: 100%;
+}   
+#extra{
+    background-color: rgba(209, 209, 209, 0.2);
+    border-radius: 10px;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+}
+button:hover{
+    background-color: paleturquoise;
+    line-height: 1.15;
+}
+#personal_info input, #storm input{
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    font-size: 25px;
+    width: 100%;
+}
+form input:focus{
+    background-color: paleturquoise;
+    border: none;
+}
+button{
+    transition: background-color 1s, transform 1s ;
+}
+

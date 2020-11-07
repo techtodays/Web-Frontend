@@ -1,0 +1,14 @@
+#thankyou{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+#thankyou button{
+    grid-row: 2;
+    width: fit-content;
+    height: 30px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: paleturquoise;
+}

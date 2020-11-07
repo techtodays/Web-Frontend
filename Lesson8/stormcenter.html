@@ -6,15 +6,10 @@
     <title>Storm Center</title>
     <link rel="stylesheet" href="preston-8.css">
     <link rel="stylesheet" href="css/stormcenter.css">
+    <script src="js/stormcenter.js"></script>
     <link rel="shortcut icon" href="images/favicon.ico">
-    <script src="js/preston-8.js"></script>
 </head>
 <body>
-    <div id=new class=new1>
-        <marquee behavior="alternate" scrollamount="12">🥞</marquee>
-        <p>Preston <strong>Pancakes</strong> in the Park! <strong>9:00 a.m. Saturday</strong> at the city park pavillian.</p>
-        <marquee behavior="alternate" scrollamount="12">🥞</marquee>
-    </div>
     <header>
         <img src="images/Icon.jpeg">
         <h1>Diverse Weather</h1>
@@ -32,11 +27,12 @@
         </ul>
     </nav>
     <main>
-        <form method="GET" id="stormcenter">
-            <div id="personal_info">
+        <form action="thankyou.html" method="GET" id="stormcenter">
+            <fieldset id="personal_info">
+                <legend>Contact Info</legend>
                 <label id="name" for="fullname">
                     <p>Full Name:</p> 
-                    <input type="text" name="fullname" pattern="[a-z A-Z]+" minlength="5" required>
+                    <input type="text" name="fullname" pattern="[a-z A-Z]+" minlength="5" required autofocus>
                 </label>
                 <label id="email" for="email">
                     <p>Email:</p>
@@ -50,15 +46,17 @@
                     <p>Zip Code:</p> 
                     <input type="number" name="zipcode" required><br>
                 </label>
-            </div>
-            <div id="storm">
+            </fieldset>
+            <fieldset id="storm">
+                <legend>Storm Info</legend>
                 <label id="date" for="date">
                     <p>Storm Date:</p> 
                     <input type="date" name="date"><br>
                 </label>
                 <label id="severe" for="severity">
                     <p>Storm Severity:</p>
-                    <input type="range" name="severity" min="1" max="10" value="1">
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
                 </label>
                 <label id="type" for="type">
                     <p>Storm Type:</p> 
@@ -80,20 +78,21 @@
                         <option value="option3">Fish Haven</option>
                     </select>
                 </label>
-            </div>
-            <label id="level" for="level">
-                <p>Danger Level:</p>
-                <input type="radio" name="level" checked>yes</input>
-                <input type="radio" name="level">no</input>
-                <input type="radio" name="level">maybe</input>
-            </label>
-            <label id="info" for="info">
-                <p>Additional Information:</p>
-                <textarea name="info" rows="10" cols="40" maxlength="300"></textarea>
-            </label>
-            <br>
-            <br>
-            <button type="submit" form="stormcenter" name="submit" value="button">Submit</button>
+            </fieldset>
+            <fieldset id="extra">
+                <legend>Extra</legend>
+                <label id="level" for="level">
+                    <p>Danger Level:</p>
+                    <input type="radio" name="level" checked>yes</input>
+                    <input type="radio" name="level">no</input>
+                    <input type="radio" name="level">maybe</input>
+                </label>
+                <label id="info" for="info">
+                    <p>Additional Information:</p>
+                    <textarea name="info" maxlength="300"></textarea>
+                </label>
+            </fieldset>
+            <button type="submit" form="stormcenter" name="submit" value="button">Submit Information Here!</button>
         </form>
     </main>
     <footer id="legal">
