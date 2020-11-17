@@ -1,6 +1,6 @@
 window.addEventListener("load",(event)=>{
-var s = document.getElementById("speed").innerHTML;
-var t = document.getElementById("temp").innerHTML;
+var s = document.getElementById("current-speed").innerHTML;
+var t = document.getElementById("current-temp").innerHTML;
 t = parseInt(t);
 s = parseInt(s);
 var f = document.getElementById("wind");
