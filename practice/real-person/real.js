@@ -1,4 +1,4 @@
-const requestURL = 'https://pipl.ir/v1/getPerson';
+const requestURL = 'https://www.ahfx.com/person.php';
 fetch(requestURL)
   .then(function (response) {
     return response.json();
@@ -6,16 +6,29 @@ fetch(requestURL)
   .then(function (jsonObject) {
     console.table(jsonObject);
     const person = jsonObject['person'];
-    const marriage = jsonObject['marriage'];
-    const personal = jsonObject['personal'];
-    const online= jsonObject['online_info'];
-    var list = ['marriage', 'personal', 'online_info'];
-    for (let i = 0; i < prophets.length; i++ ) {
-        let section = document.createElement('section');
-        let p0 = document.createElement('p');
-        let p1 = document.createElement('p');
-        let p2 = document.createElement('p');
-        let p3 = document.createElement('p');
-    }
+    const marriage = person['marriage'];
+    const personal = person['personal'];
+    const online = person['online_info'];
+    
+    let card1 = document.createElement('section');
+    let h2 = document.createElement('h2');
+    let eye = document.createElement('p');
+    let password  = document.createElement('p');
+    let email = document.createElement('p');
+    let city = document.createElement('p');
+    let children = document.createElement('p');
+    let ip = document.createElement('p');
+
+    card1.appendChild(h2);
+    card1.appendChild(eye);
+    card1.appendChild(password);
+    card1.appendChild(email);
+    card1.appendChild(city);
+    card1.appendChild(children);
+    card1.appendChild(ip);
+    
+    h2.textContent = personal.name;
+    h2.textContent = personal.last_name;
+    document.querySelector(div.card).appendChild(card1);
 });
       
