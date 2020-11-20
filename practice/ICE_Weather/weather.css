@@ -1,22 +1,31 @@
 #weatherType, #currentTemp{
     text-align: center;
 }
-
 img{
     border-radius: 12px 12px 12px 12px;
     width: 350px;
     margin-bottom: 0;
     height: 100%;
+    grid-row: 1/-1;
+    box-shadow: 1px 1px 5px blue;
 }
 body {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 100px 100px 200px;
 }
-h2, h3 {
-    color: white;
+#box1{
+    height: 100%;
+    grid-row: 1/-1;
+    grid-column: 1;
+}
+h2 {
+  grid-row: 3;
+  grid-column: 1;  
 }
 p {
     color: #D4C1E7;
+    padding-left: 15px;
 }
 p:hover {
     color: black;
@@ -27,10 +36,10 @@ p{
     grid-template-columns: 1fr 50px 1fr;
 }
 #fivedays{
-    box-shadow: 1px 1px 5px blue;
-    border-radius: 0px 12px;
+    border-radius: 0 0 12px 12px;
     width: 350px;
     margin-top: 0;
+    grid-row: 5;
+    grid-column: 1;
+    background-color: white;
 }
-
-just copy the code if you want it 
