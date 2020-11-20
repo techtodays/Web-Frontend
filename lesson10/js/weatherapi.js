@@ -36,7 +36,7 @@ fetch(apiURL)
       let d = new Date().getDay();
       let new2 = d + i;
       if(new2 > 6){
-        new2 = new2 - 6;
+        new2 = new2 - 7;
       };
       document.querySelector('#weather-day'+i).textContent = days[new2];
     }
