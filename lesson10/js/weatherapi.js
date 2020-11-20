@@ -30,10 +30,14 @@ fetch(apiURL)
         }
       }
     });
-    x = 0
-    for(i = 1; i < 6; i++){
+    window.addEventListener("load",(event)=>{
+    for(i = 0; i <= 6; i++){
       var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
       let d = new Date().getDay();
-     // document.querySelector('#day'+x).textContent = days[d];
-      x = x + 1;
+      let new2 = d + i;
+      if(new2 > 6){
+        new2 = new2 - 6;
+      };
+      document.querySelector('#weather-day'+i).textContent = days[new2];
     }
+  });

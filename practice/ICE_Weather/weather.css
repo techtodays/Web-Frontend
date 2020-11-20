@@ -1,0 +1,36 @@
+#weatherType, #currentTemp{
+    text-align: center;
+}
+
+img{
+    border-radius: 12px 12px 12px 12px;
+    width: 350px;
+    margin-bottom: 0;
+    height: 100%;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+h2, h3 {
+    color: white;
+}
+p {
+    color: #D4C1E7;
+}
+p:hover {
+    color: black;
+}
+
+p{
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr;
+}
+#fivedays{
+    box-shadow: 1px 1px 5px blue;
+    border-radius: 0px 12px;
+    width: 350px;
+    margin-top: 0;
+}
+
+just copy the code if you want it 
