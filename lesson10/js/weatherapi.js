@@ -21,7 +21,8 @@ fetch(apiURL)
       let x=0;
       for (let i = 0; i < list.length; i++ ){
         if (list[i].dt_txt.includes('18:00:00')){
-          document.querySelector('#temp'+x).textContent = list[i].main.temp;          
+          document.querySelector('#sky'+x).textContent = list[i].weather[0].main;
+          document.querySelector('#temp'+x).textContent = list[i].main.temp;
           document.querySelector('#image'+x).src="https://openweathermap.org/img/wn/"+list[i].weather[0].icon +"@2x.png";
           x=x+1;
         }
