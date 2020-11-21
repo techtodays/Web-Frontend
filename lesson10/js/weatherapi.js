@@ -25,19 +25,17 @@ fetch(apiURL)
           document.querySelector('#temp'+x).textContent = list[i].main.temp;
           document.querySelector('#image'+x).src="https://openweathermap.org/img/wn/"+list[i].weather[0].icon +"@2x.png";
           x=x+1;
-          //var day1 = Date.parse(list[i].dt_txt.str.slice(0, 10));
-          //console.log(day1)
         }
       }
     });
     window.addEventListener("load",(event)=>{
     for(i = 0; i <= 6; i++){
-      var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
       let d = new Date().getDay();
-      let new2 = d + i;
-      if(new2 > 6){
-        new2 = new2 - 7;
-      };
-      document.querySelector('#weather-day'+i).textContent = days[new2];
-    }
+      let news = d + 1 + i;
+      if(news > 6){
+        news = news - 7;
+      }
+      document.querySelector('#weather-day' + i).textContent = days[news];
+    };
   });
