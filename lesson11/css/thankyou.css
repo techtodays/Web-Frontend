@@ -1,0 +1,24 @@
+#thankyou{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+}
+#thankyou button{
+    grid-row: 2;
+    width: fit-content;
+    height: 30px;
+    border-radius: 10px;
+    justify-self: center;
+}
+button:hover{
+    background-color: paleturquoise;
+}
+body{
+    min-height: 1000px;
+}
+footer{
+    margin-top: 330px;
+}

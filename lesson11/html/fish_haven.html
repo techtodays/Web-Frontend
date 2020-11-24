@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/lesson11/css/preston.css">
+        <link rel="shortcut icon" href="/lesson11/images/favicon.ico">        <title>Diverse Weather</title>
+        <script src="/lesson11/js/preston.js"></script>
+        <script src="/lesson11/js/windchill.js"></script>
+        <script src="/lesson11/js/fish_haven_weather.js"></script>
+    </head>
+    <body>
+        <div id=new class=new1>
+            <marquee behavior="alternate" scrollamount="12">🥞</marquee>
+            <p>Preston <strong>Pancakes</strong> in the Park! <strong>9:00 a.m. Saturday</strong> at the city park pavillian.</p>
+            <marquee behavior="alternate" scrollamount="12">🥞</marquee>
+        </div>
+        <header>
+            <img src="/lesson11/images/Icon.jpeg">
+            <h1>Diverse Weather</h1>
+            <h3>This is Fish Heaven.</h3>
+        </header>
+        <nav>
+            <ul class="navigation" >
+                <li><a class="ham fix3" href="#">🍔&#9776 Menu</a></li>
+                <li><a class="fix" href="/lesson11/html/index.html">Home</a></li>
+                <li><a href="/lesson11/html/preston.html">Preston</a></li>
+                <li><a href="/lesson11/html/soda_springs.html">Soda Springs</a></li>
+                <li><a class="active" href="/lesson11/html/fish_haven.html">Fish Haven</a></li>
+                <li><a href="/lesson11/html/stormcenter.html">Storm Center</a></li>
+                <li><a class="fix2" href="/lesson11/html/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="weather-summary">
+                <div id="container">
+                    <h2>Fish Haven</h2>
+                    <img src="/lesson11/images/fish_haven.jpg" alt="">
+                    <div id=summary>
+                        <h3>Weather Summary</h3>
+                        <p>
+                            <b>Temperature</b>: <span id="current-temp"></span>°F<span id="icon"> </span> <br>
+                            <b>Environment</b>: <span id="current-environment"></span> <br>
+                            <b>Humidity</b>: <span id="current-humidity"></span>% <br>
+                            <b>Chance of Rain</b>: 10% <br>
+                            <b>Wind Speed</b>: <span id="current-speed">12</span>mph <br>
+                            <b>Wind Chill</b>: <span id="wind"></span>°F
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="forcast-container">
+                <h2>Five Day Forecast</h2>
+                <div id="day1">
+                    <h3 id="weather-day0"></h3>
+                    <p>
+                        <span id="sky0"></span> <br>
+                        <span id="temp0"></span>° F <br>
+                    </p>
+                    <img id="image0" src="" alt="weather">
+                </div>
+                <div id="day2">
+                    <h3 id="weather-day1"></h3>
+                    <p>
+                        <span id="sky1"></span> <br>
+                        <span id="temp1"></span>° F <br>
+                    </p>
+                    <img id="image1" src="" alt="weather">
+                </div>
+                <div id="day3">
+                    <h3 id="weather-day2"></h3>
+                    <p>
+                        <span id="sky2"></span> <br>
+                        <span id="temp2"></span>° F <br>
+                    </p>
+                    <img id="image2" src="" alt="weather">
+                </div>
+                <div id="day4">
+                    <h3 id="weather-day3"></h3>
+                    <p>
+                        <span id="sky3"></span> <br>
+                        <span id="temp3"></span>° F <br>
+                    </p>
+                    <img id="image3" src="" alt="weather">
+                </div>
+                <div id="day5">
+                    <h3 id="weather-day4"></h3>
+                    <p>
+                        <span id="sky4"></span> <br>
+                        <span id="temp4"></span>° F <br>
+                    </p>
+                    <img id="image4" src="" alt="weather">
+                </div>
+            </section>
+            <section id="article">
+                <img src="/lesson11/images/boy.jpg" alt="End of the World">
+                <h2>Come a fishin</h2>
+                <p>this is just some random stuff in some stuff hahaha</p>
+                <p>this is just some random stuff in some stuff hahaha</p>
+                <p>this is just some random stuff in some stuff hahaha</p>
+                <br class="clear">
+            </section>
+            <section id="contact">
+                <h2>Contact Information</h2>
+                <p><b>&#9993</b> = Endoftheworld.now</p>
+                <p><b>📞</b> = 1(800)NOW-ENDS</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.9973704241324!2d-111.78544368417127!3d43.814413950008245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b03dc48a5cf%3A0x1e5534d3c38ef412!2sBrigham%20Young%20University-Idaho!5e0!3m2!1sen!2sus!4v1603144268754!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <br class="clear">
+            </section>
+        </main>
+        <footer id="legal">
+            <p class="legal">&copy; <span id="copyrightyear"></span> | Isaiah R. Halsey  | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+            <p class="highlight">Last Updated: <span id="lastupdated"></span></p>
+            <p id="today"></p>
+        </footer>
+        <br class="clear">
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script></body>
+        <script>
+            WebFont.load({
+                google: {
+                families: [
+                    'Roboto'
+                ]
+                }
+            });
+    </script>
+    </body>
+</html>
