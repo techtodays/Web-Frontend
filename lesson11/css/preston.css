@@ -192,6 +192,9 @@ iframe{
 #contact b{
     font-size: 25px;
 }
+#article p{
+    line-height: 30px;
+}
 ::-webkit-scrollbar {
     width: 8px;
     overflow: overlay;
