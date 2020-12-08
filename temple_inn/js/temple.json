@@ -1,4 +1,5 @@
-[
+{
+    "temples":[
         {
             "name":"Laie Hawaii Temple",
             "address":"600 Naniloa Loop Laie HI",
@@ -44,3 +45,4 @@
             "temple closure schedule":"None"
         }
     ]
+}

@@ -3,6 +3,7 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
-    document.getElementById(tname).textContent = jsObject[0].name;
+    const temples = jsObject('temples')
+    document.getElementById(tname).textContent = temples[0].name;
 
   })
