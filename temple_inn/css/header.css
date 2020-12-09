@@ -51,7 +51,7 @@ nav ul li:hover{
     z-index: -1;
 }
 header button:hover{
-    background-color: lightcoral;
+    background-color: rgb(143, 38, 38);
 }
 header{
     display: grid;
@@ -86,12 +86,16 @@ header div{
     color: white;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    border-radius: 15px;
 }
 header div p{
     font-size: 25px;
 }
 header div p span{
     font-size: 15px;
+}
+header div h2{
+    color: rgb(143, 38, 38);
 }
 @media only screen and (min-width: 500px){
     header{
