@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Page</title>
+    <link rel="stylesheet" href="/temple_inn/css/header.css">
+    <script src="/temple_inn/js/reservation.js"></script>
+    <link rel="stylesheet" href="/temple_inn/css/reservation.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="navigation">
+                <li><a id="ham" href="#">&#8801</a></li>
+                <li><a href="/temple_inn/html/home.html">Home</a></li>
+                <li><a href="/temple_inn/html/laie_temple.html">Hawaii</a></li>
+                <li><a href="/temple_inn/html/oakland_temple.html">Oakland</a></li>
+                <li><a href="/temple_inn/html/phoenix_temple.html">Phoenix</a></li>
+                <li><a href="/temple_inn/html/provo_temple.html">Provo</a></li>
+            </ul>
+        </nav>
+        <img id="logo" src="/temple_inn/images/logo_simple.png" alt="logo">
+        <button>Book Now!</button>
+        <div>
+            <p>
+                On a trip to see all the temples we got you covered! <br>
+                <span>
+                    book today and get 20% OFF of a Temple Trip <br>
+                    offer ends soon so don't miss out
+                </span>
+            </p>
+            <button>Learn More</button>
+        </div>
+        <video loop autoplay>
+            <source src="/temple_inn/images/outside.mp4">
+        </video>
+    </header>
+    <main>
+        <form action="/lesson11/html/thankyou.html" method="GET" id="stormcenter">
+            <fieldset id="personal_info">
+                <legend>Contact Info</legend>
+                <label id="name" for="fullname">
+                    <p>Full Name:</p> 
+                    <input type="text" name="fullname" pattern="[a-z A-Z]+" minlength="5" required autofocus>
+                </label>
+                <label id="email" for="email">
+                    <p>Email:</p>
+                    <input type="text" name="email" placeholder="endoftheworld@crazy.now" required><br>
+                </label>
+                <label id="phone" for="phone">
+                    <p>Phone #:</p> 
+                    <input type="tel" name="phone" required><br>
+                </label>
+                <label id="accomodations" for="accomodations">
+                    <p>Special Accommodations:</p>
+                    <textarea name="info" maxlength="300"></textarea>
+                </label>
+            </fieldset>
+            <fieldset id="hotel">
+                <legend>Hotel Info</legend>
+                <label id="region" for="region">
+                    <p>Hotels:</p>
+                    <select name="region">
+                        <option selected disabled value="default">Select Hotel...</option>
+                        <option value="option1">Laie Hawaii</option>
+                        <option value="option2">Oakland California</option>
+                        <option value="option3">Phoenix Arizona</option>
+                        <option value="option4">Provo City Center</option>
+                    </select>
+                </label>
+                <label id="region" for="region">
+                    <p>Hotel Rooms:</p>
+                    <select name="region">
+                        <option selected disabled value="default">Select Room...</option>
+                        <option value="option1">2 Bed Large Room</option>
+                        <option value="option2">2 Bed Small Room</option>
+                        <option value="option3">1 Bed Large Room</option>
+                        <option value="option4">1 Bed Small Room</option>
+                    </select>
+                </label>
+                <label id="date" for="date">
+                    <p>Reservation Date:</p> 
+                    <input type="date" name="date"><br>
+                </label>
+                <label id="severe" for="severity">
+                    <p>People Per Room:</p>
+                    <input type="range" name="severe" id="rating" value="2" min="1" max="5" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">2</span>
+                </label>
+            </fieldset>
+            <button id="submit" type="submit" form="stormcenter" name="submit" value="button">Submit Information Here!</button>
+        </form>
+    </main>
+</body>
+</html>

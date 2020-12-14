@@ -1,6 +1,28 @@
 body{
     margin: 0 auto;
+    background: url(/temple_inn/images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: none;
+    overflow: overlay;
 }
+::-webkit-scrollbar {
+    width: 8px;
+    overflow: auto;
+    background: transparent;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(41, 40, 40, .6);; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(41, 40, 40, 1);; 
+  }
 
 /*Header!!!!!!!!!!!!!!!*/
 
