@@ -6,6 +6,7 @@ body{
     background-size: cover;
     margin-top: none;
     overflow: overlay;
+    font-family: 'Roboto', sans-serif;
 }
 ::-webkit-scrollbar {
     width: 8px;
@@ -65,32 +66,47 @@ nav ul li:first-child{
     color: black;
     text-align: center;
 }
-nav ul li:hover{
+nav ul li:hover:not(.active){
     background-color: lightcoral;
 }
 .responsive li{
     display: block;
     z-index: -1;
 }
-header button:hover{
-    background-color: rgb(143, 38, 38);
+header #book_now:hover{
+    background-color: grey;
+}
+#book_now{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    background: rgb(143, 38, 38);
+    border-radius: 2px;
+    font-size: 30px;
+    grid-column: 1/-1;
 }
 header{
     display: grid;
     grid-template-columns: 100px 1fr 1fr;
     grid-template-rows: 45px 1fr 1fr;
 }
-video{
-    width: 100%;
+#video{
     grid-column: 1/-1;
     grid-row: 2/-1;
     z-index: 1;
 }
-header img{
+video{
     width: 100%;
+}
+header #main_img{
+    overflow: hidden;
     grid-column: 1/-1;
     grid-row: 2/-1;
     z-index: 1;
+}
+#main_img img{
+    width: 100%;
 }
 #logo{
     grid-row: 1;
@@ -104,14 +120,22 @@ header div{
     grid-column: 1/-1;
     grid-row: 2/-1;
     z-index: 2;
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
+    background: rgba(216, 216, 216, 0.616);
+    color: black;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    border-radius: 15px;
+    line-height: 30px;
 }
-header div p{
-    font-size: 25px;
+header div a{
+    text-decoration: none;
+    border: 1px black solid;
+    color: black;
+    background: grey;
+    padding: 5px 2px 5px 2px;
+    border-radius: 2px;
+}
+header div a:hover{
+    background: rgb(143, 38, 38);
 }
 header div p span{
     font-size: 15px;
@@ -119,19 +143,78 @@ header div p span{
 header div h2{
     color: rgb(143, 38, 38);
 }
-@media only screen and (min-width: 500px){
+button:hover{
+    background: rgb(143, 38, 38);
+}
+.active{
+    background: rgb(143, 38, 38);
+}
+@media only screen and (min-width: 750px){
     header{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 45px 1fr 1fr 1fr 1fr;
     }
     header div{
-        grid-column: 2/5;
+        grid-column: 3;
         grid-row: 3/5;
+        border-radius: 15px;
     }
-    header button{
+    header #book_now{
         grid-column: 5;
         grid-row: 1;
         z-index: 3;
         font-size: 25px;
+        padding-top: 10px;
     }
+    #main_img{
+        border-radius: 0px;
+    }
+    #video{
+        border-radius: 0px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    #main_img{
+        height: 500px;
+        overflow: hidden;
+    }
+    #main_img img{
+        position: relative;
+        bottom: 200px;
+    }
+    header #video{
+        height: 500px;
+        overflow: hidden;
+    }
+    video{
+        position: relative;
+        bottom: 200px;
+    }
+}
+
+/*footer!!!!!!!!!!!!!!!!!!!!!!!*/
+
+footer{
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0 20px 0 20px;
+    margin-top: 20px;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+footer #footer_info{
+    margin: 0;
+    padding: 0px;
+    grid-column: span 2;
+    line-height: 30px;
+    padding-top: 10px;
+}
+footer img{
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+}
+footer a{
+    text-align: center;
 }

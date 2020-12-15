@@ -8,4 +8,9 @@ fetch(apiURL)
     document.getElementById('taddress').textContent = temples[3].address;
     document.getElementById('tnumber').textContent = temples[3].number;
     document.getElementById('temail').textContent = temples[3].email;
+    document.getElementById('tservices').innerHTML = temples[3].services;
+    document.getElementById('thistory').innerHTML = temples[3].history;
+    document.getElementById('tordinance').innerHTML = temples[3].ordinance_schedule;
+    document.getElementById('tsession').innerHTML = temples[3].session_schedule;
+    document.getElementById('tcloser').innerHTML = temples[3].temple_closure_schedule;
   });

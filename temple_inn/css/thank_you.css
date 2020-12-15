@@ -1,0 +1,15 @@
+main h1{
+    font-size: 40px;
+}
+main a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    border: 1px solid black;
+    background: grey;
+    padding: 5px 10px 5px 10px;
+    border-radius: 2px;
+}
+main a:hover{
+    background: rgb(143, 38, 38);
+}

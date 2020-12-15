@@ -1,5 +1,7 @@
 main{
     padding: 10px;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 #temple{
     display: grid;
@@ -24,7 +26,7 @@ main{
 #info{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 100px;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     margin-top: 10px;

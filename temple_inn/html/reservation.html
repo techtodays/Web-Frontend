@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/temple_inn/css/header.css">
     <script src="/temple_inn/js/reservation.js"></script>
     <link rel="stylesheet" href="/temple_inn/css/reservation.css">
+    <script src="/temple_inn/js/home.js"></script>
+    <link rel="stylesheet" href="/temple_inn/css/normalize.css">
 </head>
 <body>
     <header>
@@ -18,26 +20,13 @@
                 <li><a href="/temple_inn/html/oakland_temple.html">Oakland</a></li>
                 <li><a href="/temple_inn/html/phoenix_temple.html">Phoenix</a></li>
                 <li><a href="/temple_inn/html/provo_temple.html">Provo</a></li>
+                <li><a href="/temple_inn/html/contact.html">Contact</a></li>
             </ul>
         </nav>
         <img id="logo" src="/temple_inn/images/logo_simple.png" alt="logo">
-        <button>Book Now!</button>
-        <div>
-            <p>
-                On a trip to see all the temples we got you covered! <br>
-                <span>
-                    book today and get 20% OFF of a Temple Trip <br>
-                    offer ends soon so don't miss out
-                </span>
-            </p>
-            <button>Learn More</button>
-        </div>
-        <video loop autoplay>
-            <source src="/temple_inn/images/outside.mp4">
-        </video>
     </header>
     <main>
-        <form action="/lesson11/html/thankyou.html" method="GET" id="stormcenter">
+        <form action="/temple_inn/html/thank_you.html" method="GET" id="temple_inn">
             <fieldset id="personal_info">
                 <legend>Contact Info</legend>
                 <label id="name" for="fullname">
@@ -59,9 +48,9 @@
             </fieldset>
             <fieldset id="hotel">
                 <legend>Hotel Info</legend>
-                <label id="region" for="region">
+                <label id="info" for="info">
                     <p>Hotels:</p>
-                    <select name="region">
+                    <select name="info">
                         <option selected disabled value="default">Select Hotel...</option>
                         <option value="option1">Laie Hawaii</option>
                         <option value="option2">Oakland California</option>
@@ -69,9 +58,9 @@
                         <option value="option4">Provo City Center</option>
                     </select>
                 </label>
-                <label id="region" for="region">
+                <label id="rooms" for="rooms">
                     <p>Hotel Rooms:</p>
-                    <select name="region">
+                    <select name="rooms">
                         <option selected disabled value="default">Select Room...</option>
                         <option value="option1">2 Bed Large Room</option>
                         <option value="option2">2 Bed Small Room</option>
@@ -83,14 +72,24 @@
                     <p>Reservation Date:</p> 
                     <input type="date" name="date"><br>
                 </label>
-                <label id="severe" for="severity">
+                <label id="people" for="people">
                     <p>People Per Room:</p>
-                    <input type="range" name="severe" id="rating" value="2" min="1" max="5" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <input type="range" name="people" id="rating" value="2" min="1" max="5" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                     <span id="ratingvalue">2</span>
                 </label>
             </fieldset>
-            <button id="submit" type="submit" form="stormcenter" name="submit" value="button">Submit Information Here!</button>
+            <button id="submit" type="submit" form="temple_inn" name="submit" value="button">Submit Information Here!</button>
         </form>
     </main>
+    <footer>
+        <p id="footer_info">
+            Phone: (333)555-4545 <br>
+            Email: temple_inn@temple.com <br>
+        </p>
+        <p>Follow Us:</p>
+        <a href="https://www.facebook.com"><img src="/temple_inn/images/iconfinder_Colored_Facebook3_svg_5365678.png" loading="lazy" alt="Facebook"></a>
+        <a href="https://www.youtube.com"><img src="/temple_inn/images/iconfinder_1_Youtube_colored_svg_5296521.png" loading="lazy" alt="Youtube"></a>
+        <a href="https://www.twitter.com"><img src="/temple_inn/images/iconfinder_1_Twitter_colored_svg_5296514.png" loading="lazy" alt="Twitter"></a>
+    </footer>
 </body>
 </html>

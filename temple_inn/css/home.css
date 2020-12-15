@@ -1,7 +1,9 @@
 /*main!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 main{
-    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 10px;
 }
 main a img{
     width: 100%;
@@ -21,9 +23,8 @@ main #temples{
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
     border-radius: 15px;
-    max-width: 1500px;
     background: rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    padding: 10px;
     margin: 0 auto;
     margin-top: 20px;
     justify-self: center;
