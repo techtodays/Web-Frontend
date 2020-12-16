@@ -1,0 +1,78 @@
+body{
+    margin: 0 auto;
+}
+form{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-flow: row dense;
+    grid-row-gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+button{
+    width: fit-content;
+    justify-self: center;
+    grid-column: 1/-1;
+    order: 3;
+}
+#level, #info{
+    grid-row: span 2;
+}
+#level{
+    margin-top: 70px;
+    order: 2;
+}
+#personal_info{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    background-color: rgba(209, 209, 209, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    justify-items: center;
+}
+#storm{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    background-color: rgba(209, 209, 209, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    justify-items: center;
+}
+#storm, #personal_info{
+    padding-bottom: 30px;
+}
+label{
+    width: 100%;
+}   
+#extra{
+    background-color: rgba(209, 209, 209, 0.2);
+    border-radius: 10px;
+    grid-column: 1/-1;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+}
+button:hover{
+    background-color: paleturquoise;
+    line-height: 1.15;
+}
+#personal_info input, #storm input{
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    font-size: 25px;
+    width: 100%;
+}
+form input:focus{
+    background-color: paleturquoise;
+    border: none;
+}
+button{
+    transition: background-color 1s, transform 1s ;
+}
+

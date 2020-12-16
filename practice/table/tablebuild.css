@@ -1,0 +1,17 @@
+
+table{
+    text-align: center;
+    font-family: Ubuntu, sans-serif;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 10px #628ca6;
+    line-height: 30px;
+    margin: 300px auto;
+}
+td{
+    border: 1px solid grey;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#tr6 td:first-child{
+    font-style: italic;
+}

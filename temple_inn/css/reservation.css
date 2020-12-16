@@ -1,0 +1,12 @@
+fieldset{
+    background: rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    border-radius: 15px;
+}
+legend{
+    font-size: 25px;
+    color: rgb(143, 38, 38);
+}
+#submit{
+    margin: 0 auto;
+}

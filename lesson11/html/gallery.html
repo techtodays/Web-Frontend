@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="/lesson11/css/gallery.css">
+    <link rel="stylesheet" href="/lesson11/css/preston.css">
+    <link rel="shortcut icon" href="/lesson11/images/favicon.ico">
+    <script src="/lesson11/js/preston.js"></script>
+    <script src="/lesson11/js/gallery.js"></script>
+</head>
+<body id="info">
+    <header>
+        <img src="/lesson11/images/Icon.jpeg" alt="icon">
+        <h1>Diverse Weather</h1>
+        <h3>Do or do not there is not try</h3>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham fix2" href="#">🍔&#9776 Menu</a></li>
+            <li><a class="fix" href="/lesson11/html/index.html">Home</a></li>
+            <li><a href="/lesson11/html/preston.html">Preston</a></li>
+            <li><a href="/lesson11/html/soda_springs.html">Soda Springs</a></li>
+            <li><a href="/lesson11/html/fish_haven.html">Fish Haven</a></li>
+            <li><a href="/lesson11/html/stormcenter.html">Storm Center</a></li>
+            <li><a class="active fix3" href="/lesson11/html/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Weather Gallery</h2>
+        <picture>
+            <img class="img" src="/lesson11/images/galleryimg1-min.jpg" loading="lazy" alt="Sunrise">
+            <p>Sunrise</p>
+        </picture>
+        <picture>
+            <img class="img" src="/lesson11/images/galleryimg2-min.jpg" loading="lazy" alt="Lake">
+            <p>Lake</p>
+        </picture>
+        <picture>
+            <img class="img" src="/lesson11/images/galleryimg3-min.jpg" loading="lazy" alt="Lightning">
+            <p>Lightning</p>
+        </picture>
+        <picture>
+            <img class="img" src="/lesson11/images/galleryimg4-min.jpg" loading="lazy" alt="Snow">
+            <p>Snow</p>
+        </picture>
+        <picture>
+            <img class="img" src="/lesson11/images/galleryimg5-min.jpg" loading="lazy" alt="Lightning">
+            <p>Lightning</p>
+        </picture>
+        <picture>
+            <img class="img" src="/lesson11/images/galleryimg6-min.jpg" loading="lazy" alt="Waterfall">
+            <p>Waterfall</p>
+        </picture>
+        <picture>
+            <img class="img" src="/lesson11/images/galleryimg7-min.jpg" loading="lazy" alt="Sunrise">
+            <p>Sunrise</p>
+        </picture>
+        <picture>
+            <img class="img" src="/lesson11/images/galleryimg8-min.jpg" loading="lazy" alt="Cloudy">
+            <p>Cloudy</p>
+        </picture>
+        <picture id="img9">
+            <img class="img" src="/lesson11/images/galleryimg9-min.jpg" loading="lazy" alt="Ocean">
+            <p>Ocean</p>
+        </picture> 
+        <div>
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+        </div>  
+    </main>
+    <footer id="legal">
+        <p class="legal">&copy; <span id="copyrightyear"></span> | Isaiah R. Halsey  | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p class="highlight">Last Updated: <span id="lastupdated"></span></p>
+        <p id="today"></p>
+    </footer>
+    <br class="clear">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script></body>
+    <script>
+        WebFont.load({
+            google: {
+            families: [
+                'Roboto'
+            ]
+            }
+        });
+</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Page</title>
+    <link rel="stylesheet" href="/temple_inn/css/header.css">
+    <script src="/temple_inn/js/reservation.js"></script>
+    <link rel="stylesheet" href="/temple_inn/css/reservation.css">
+    <script src="/temple_inn/js/home.js"></script>
+    <link rel="stylesheet" href="/temple_inn/css/normalize.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="navigation">
+                <li><a id="ham" href="#">&#8801</a></li>
+                <li><a href="/temple_inn/html/home.html">Home</a></li>
+                <li><a href="/temple_inn/html/laie_temple.html">Hawaii</a></li>
+                <li><a href="/temple_inn/html/oakland_temple.html">Oakland</a></li>
+                <li><a href="/temple_inn/html/phoenix_temple.html">Phoenix</a></li>
+                <li><a href="/temple_inn/html/provo_temple.html">Provo</a></li>
+                <li><a href="/temple_inn/html/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <img id="logo" src="/temple_inn/images/logo_simple.png" alt="logo">
+    </header>
+    <main>
+        <form action="/temple_inn/html/thank_you.html" method="GET" id="temple_inn">
+            <fieldset id="personal_info">
+                <legend>Contact Info</legend>
+                <label id="name" for="fullname">
+                    <p>Full Name:</p> 
+                    <input type="text" name="fullname" pattern="[a-z A-Z]+" minlength="5" required autofocus>
+                </label>
+                <label id="email" for="email">
+                    <p>Email:</p>
+                    <input type="text" name="email" placeholder="endoftheworld@crazy.now" required><br>
+                </label>
+                <label id="phone" for="phone">
+                    <p>Phone #:</p> 
+                    <input type="tel" name="phone" required><br>
+                </label>
+                <label id="accomodations" for="accomodations">
+                    <p>Special Accommodations:</p>
+                    <textarea name="info" maxlength="300"></textarea>
+                </label>
+            </fieldset>
+            <fieldset id="hotel">
+                <legend>Hotel Info</legend>
+                <label id="info" for="info">
+                    <p>Hotels:</p>
+                    <select name="info">
+                        <option selected disabled value="default">Select Hotel...</option>
+                        <option value="option1">Laie Hawaii</option>
+                        <option value="option2">Oakland California</option>
+                        <option value="option3">Phoenix Arizona</option>
+                        <option value="option4">Provo City Center</option>
+                    </select>
+                </label>
+                <label id="rooms" for="rooms">
+                    <p>Hotel Rooms:</p>
+                    <select name="rooms">
+                        <option selected disabled value="default">Select Room...</option>
+                        <option value="option1">2 Bed Large Room</option>
+                        <option value="option2">2 Bed Small Room</option>
+                        <option value="option3">1 Bed Large Room</option>
+                        <option value="option4">1 Bed Small Room</option>
+                    </select>
+                </label>
+                <label id="date" for="date">
+                    <p>Reservation Date:</p> 
+                    <input type="date" name="date"><br>
+                </label>
+                <label id="people" for="people">
+                    <p>People Per Room:</p>
+                    <input type="range" name="people" id="rating" value="2" min="1" max="5" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">2</span>
+                </label>
+            </fieldset>
+            <button id="submit" type="submit" form="temple_inn" name="submit" value="button">Submit Information Here!</button>
+        </form>
+    </main>
+    <footer>
+        <p id="footer_info">
+            Phone: (333)555-4545 <br>
+            Email: temple_inn@temple.com <br>
+        </p>
+        <p>Follow Us:</p>
+        <a href="https://www.facebook.com"><img src="/temple_inn/images/iconfinder_Colored_Facebook3_svg_5365678.png" loading="lazy" alt="Facebook"></a>
+        <a href="https://www.youtube.com"><img src="/temple_inn/images/iconfinder_1_Youtube_colored_svg_5296521.png" loading="lazy" alt="Youtube"></a>
+        <a href="https://www.twitter.com"><img src="/temple_inn/images/iconfinder_1_Twitter_colored_svg_5296514.png" loading="lazy" alt="Twitter"></a>
+    </footer>
+</body>
+</html>

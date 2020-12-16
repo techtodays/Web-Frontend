@@ -1,0 +1,21 @@
+iframe{
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+section{
+    width: 100%;
+}
+section p{
+    line-height: 30px;
+}
+iframe:hover{
+    border-radius: 0px;
+}
+main{
+    text-align: center;
+}
+body footer{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
